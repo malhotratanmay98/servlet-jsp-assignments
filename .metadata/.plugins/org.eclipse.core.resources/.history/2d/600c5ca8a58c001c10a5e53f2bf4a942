@@ -1,0 +1,5 @@
+package com.productapp.model.exceptions;
+
+public class ProductNotFoundException {
+
+}

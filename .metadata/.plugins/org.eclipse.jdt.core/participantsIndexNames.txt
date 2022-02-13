@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+C:\Users\ve00ym342\Documents\servlet_jsp_assignments\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\958207775.index
+\q1_username_validation\src
+C:\Users\ve00ym342\Documents\servlet_jsp_assignments\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3525843741.index
+\product_app\src
