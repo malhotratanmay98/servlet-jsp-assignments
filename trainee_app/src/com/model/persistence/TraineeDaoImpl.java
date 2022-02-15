@@ -23,7 +23,7 @@ public class TraineeDaoImpl implements TraineeDao {
 					("insert into trainee(name,branch,percentage) values(?,?,?)",
 							Statement.RETURN_GENERATED_KEYS);
 			pstmt.setString(1, trainee.getTrainee_name());
-			pstmt.setString(2, trainee.getBranch());
+			pstmt.setString(2, trainee.getBranch().toString());
 			pstmt.setDouble(3, trainee.getPercentage());
 			
 			
@@ -56,7 +56,7 @@ public class TraineeDaoImpl implements TraineeDao {
 			
 			while(rs.next()) {
 				tempTrainee=new Trainee(rs.getInt(1),
-						rs.getString(2), rs.getString(3), rs.getDouble(5));
+						rs.getString(2), BranchEnum.valueOf(rs.getString(3)), rs.getDouble(4));
 				trainees.add(tempTrainee);
 			}
 		} catch(SQLException ex) {

@@ -4,7 +4,7 @@ public class Trainee {
 
 	private int trainee_id;
 	private String trainee_name;
-	private String branch; // (java, oracle, php,dotnet),
+	private BranchEnum branch; // (java, oracle, php,dotnet),
 	private Double percentage;
 	
 	
@@ -13,7 +13,7 @@ public class Trainee {
 
 
 
-	public Trainee(int trainee_id, String trainee_name, String branch, Double percentage) {
+	public Trainee(int trainee_id, String trainee_name, BranchEnum branch, Double percentage) {
 		super();
 		this.trainee_id = trainee_id;
 		this.trainee_name = trainee_name;
@@ -23,7 +23,7 @@ public class Trainee {
 
 
 
-	public Trainee(String trainee_name, String branch, Double percentage) {
+	public Trainee(String trainee_name, BranchEnum branch, Double percentage) {
 		super();
 		this.trainee_name = trainee_name;
 		this.branch = branch;
@@ -56,13 +56,13 @@ public class Trainee {
 
 
 
-	public String getBranch() {
+	public BranchEnum getBranch() {
 		return branch;
 	}
 
 
 
-	public void setBranch(String branch) {
+	public void setBranch(BranchEnum branch) {
 		this.branch = branch;
 	}
 

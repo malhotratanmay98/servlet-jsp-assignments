@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.model.persistence.BranchEnum;
 import com.model.persistence.Trainee;
 import com.model.service.TraineeService;
 import com.model.service.TraineeServiceImpl;
@@ -51,7 +52,7 @@ Integer id=Integer.parseInt(request.getParameter("id").trim());
 		Double percentage=Double.parseDouble(request.getParameter("trainee_percentage"));
 	
 		
-		Trainee trainee=new Trainee(name,branch,percentage);
+		Trainee trainee=new Trainee(name,BranchEnum.valueOf(branch),percentage);
 		 
 	
 		
