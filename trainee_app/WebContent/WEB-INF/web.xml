@@ -2,58 +2,9 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
   <display-name>trainee_app</display-name>
   <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>login.jsp</welcome-file>
+   
   </welcome-file-list>
-  <servlet>
-    <description></description>
-    <display-name>TraineeController</display-name>
-    <servlet-name>TraineeController</servlet-name>
-    <servlet-class>com.web.controller.TraineeController</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>TraineeController</servlet-name>
-    <url-pattern>/TraineeController</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>LoginController</display-name>
-    <servlet-name>LoginController</servlet-name>
-    <servlet-class>com.web.controller.LoginController</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>LoginController</servlet-name>
-    <url-pattern>/LoginController</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>LogoutController</display-name>
-    <servlet-name>LogoutController</servlet-name>
-    <servlet-class>com.web.controller.LogoutController</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>LogoutController</servlet-name>
-    <url-pattern>/LogoutController</url-pattern>
-  </servlet-mapping>
-  <filter>
-    <display-name>SecurityFilter</display-name>
-    <filter-name>SecurityFilter</filter-name>
-    <filter-class>com.model.filters.SecurityFilter</filter-class>
-  </filter>
-  <filter-mapping>
-    <filter-name>SecurityFilter</filter-name>
-    <url-pattern>/SecurityFilter</url-pattern>
-  </filter-mapping>
-  <listener>
-    <listener-class>com.web.listeners.DbDriverListener</listener-class>
-  </listener>
   
-   <context-param>
-  <param-name>jdbc.driver</param-name>
-  <param-value>com.mysql.jdbc.Driver</param-value>
-  </context-param>
+  
 </web-app>

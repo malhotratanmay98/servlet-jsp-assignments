@@ -9,7 +9,7 @@
 </head>
 <body>
 
-	<form action="TraineeController" method="post">
+	<form action="TraineeController.do" method="post">
 
 		<table>
 

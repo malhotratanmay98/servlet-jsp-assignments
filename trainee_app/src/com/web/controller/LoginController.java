@@ -32,7 +32,7 @@ public class LoginController extends HttpServlet {
 			user= optUser.orElseThrow(()-> new UserNotFoundException("user not found"));
 			HttpSession httpSession=request.getSession();
 			httpSession.setAttribute("user", user);
-			response.sendRedirect("EmployeeController?action=showall");
+			response.sendRedirect("TraineeController.do?action=showall");
 		}catch(UserNotFoundException ex) {
 			response.sendRedirect("login.jsp?status=login failed");
 		}

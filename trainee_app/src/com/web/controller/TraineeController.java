@@ -14,7 +14,7 @@ import com.model.persistence.Trainee;
 import com.model.service.TraineeService;
 import com.model.service.TraineeServiceImpl;
 
-@WebServlet("/TraineeController")
+@WebServlet("/TraineeController.do")
 public class TraineeController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -59,7 +59,7 @@ Integer id=Integer.parseInt(request.getParameter("id").trim());
 		 traineeService.addTrainee(trainee);
 		
 		
-		response.sendRedirect("TraineeController?action=showall");  //redirecting to the same page but with value showall
+		response.sendRedirect("TraineeController.do?action=showall");  //redirecting to the same page but with value showall
 		
 	}
 

@@ -49,7 +49,7 @@ welcome ${user.username}
 	</tbody>
 </table>
 <br>
-<a href="TraineeController?action=addtrainee">add new Trainee</a>
+<a href="TraineeController.do?action=addtrainee">add new Trainee</a>
 
 </body>
 </html>
