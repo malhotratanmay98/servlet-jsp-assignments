@@ -76,7 +76,7 @@ public class ProductDaoImpl implements ProductDao {
 				products.add(product);
 			}
 		}catch(SQLException e) {
-			throw new DataAccessException(e);
+			throw new DataAccessException(e); 
 		}
 		return products;
 	}
