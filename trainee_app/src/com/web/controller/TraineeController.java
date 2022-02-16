@@ -31,7 +31,7 @@ public class TraineeController extends HttpServlet {
 			
 			List<Trainee> trainees = traineeService.getAll();
 			request.setAttribute("trainees",trainees);
-			RequestDispatcher rd = request.getRequestDispatcher("allemps.jsp");
+			RequestDispatcher rd = request.getRequestDispatcher("alltrainees.jsp");
 			rd.forward(request, response);
 			
 		}
@@ -48,8 +48,8 @@ public class TraineeController extends HttpServlet {
 Integer id=Integer.parseInt(request.getParameter("id").trim());
 		
 		String name=request.getParameter("trainee_name");
-		String branch=request.getParameter("trainee_branch");
-		Double percentage=Double.parseDouble(request.getParameter("trainee_percentage"));
+		String branch=request.getParameter("branch");
+		Double percentage=Double.parseDouble(request.getParameter("percentage"));
 	
 		
 		Trainee trainee=new Trainee(name,BranchEnum.valueOf(branch),percentage);
